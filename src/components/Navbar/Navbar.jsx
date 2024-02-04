@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
+import MobileNav from './MobileNav/MobileNav';
 const Navbar = () => {
+    const [openMenu, setOpenMenu] = useState(false);
+    const toggleMenu=()=>{
+        setOpenMenu(!openMenu);
+    };
   return (
     <>
+        <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
         <nav className="nav-wrapper">
             <div className="nav-content">
                 <img className="logo" src="./assets/images/logo.png" alt=""/>
@@ -24,12 +30,13 @@ const Navbar = () => {
                         Hire Me
                     </button>
                 </ul>
-                <button className="menu-btn" onClick={()=>{}}>
+                <button className="menu-btn" onClick={toggleMenu}>
                     <div className="menu-icon">
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
+                    {openMenu?"":""}
                 </button>
             </div>
         </nav>
