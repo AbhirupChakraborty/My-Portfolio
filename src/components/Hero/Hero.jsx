@@ -10,6 +10,31 @@ const Hero = () => {
                 and Visually Stunning Web Solutions
             </p>
         </div>
+        <div className="hero-img">
+            <div>
+                <div className="tech-icon">
+                    <img src="./assets/images/react.png" alt=""/>
+                </div>
+                <img src="./assets/images/hero.png" alt=""/>
+            </div>
+            <div>
+                <div className="tech-icon">
+                    <img src="./assets/images/html-icon.png" alt=""/>
+                </div>
+                <div className="tech-icon">
+                    <img src="./assets/images/css-icon.png" alt=""/>
+                </div>
+                <div className="tech-icon">
+                    <img src="./assets/images/js-icon.png" alt=""/>
+                </div>
+                <div className="tech-icon">
+                    <img src="./assets/images/redux-icon.png" alt=""/>
+                </div>
+                <div className="tech-icon">
+                    <img src="./assets/images/typescript-icon.png" alt=""/>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }
